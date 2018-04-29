@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="4">
+	<!-- suite name="Suite" parallel="classes" thread-count="4" -->
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+				<include name="Functional"></include>
+				<include name="Smoke"></include>
+				<!--exclude name="Smoke"></exclude-->
+			</run>
+		</groups>
+		<classes>
+			<class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
+			<class
+				name="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
