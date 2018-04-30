@@ -32,7 +32,7 @@ public class parallelRunWithPriorityAndGrouping {
 		softAssert.assertAll();
 	}
 
-	@Test(groups = "Smoke", priority = 3)
+	@Test(groups = "Smoke", priority = 3, retryAnalyzer=Retry.class)
 	public void TestFunctionSecond() {
 		System.out.println("I am running Smoke test and in the second case of parallelRunWithPriorityAndGrouping.");
 		softAssert.assertFalse(false);
@@ -51,7 +51,7 @@ public class parallelRunWithPriorityAndGrouping {
 		System.out.println("AssertNotEqual of hardassert passes as condition is not matching.");
 	}
 
-	@Test(groups = { "Functional", "Sanity" }, priority = 1)
+	@Test(groups = { "Functional", "Sanity" }, priority = 1, retryAnalyzer=Retry.class)
 	public void TestFunctionFourth() {
 		System.out.println(
 				"I am running Functional+Sanity test grouping test and in the Fourth case of parallelRunWithPriorityAndGrouping.");
@@ -62,14 +62,14 @@ public class parallelRunWithPriorityAndGrouping {
 		softAssert.assertAll();
 	}
 
-	@Test(groups = "Functional", priority = 4)
+	@Test(groups = "Functional", priority = 4, retryAnalyzer=Retry.class)
 	public void TestFunctionFifth() {
 		System.out.println("I am running Functional test and in the fifth case of parallelRunWithPriorityAndGrouping.");
 		System.out.println("I am going to skip it in the runtime.");
 		throw new SkipException("I am going to skip it during run time.");
 	}
 
-	@Test(groups = "Smoke", priority = 2)
+	@Test(groups = "Smoke", priority = 2, retryAnalyzer=Retry.class)
 	public void TestFunctionSixth() {
 		System.out.println("I am running Functional test and in the third case of parallelRunWithPriorityAndGrouping.");
 		System.out.println(

@@ -4,6 +4,7 @@
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.org.TestNGPracticeCode.TestNgPractice.Transformation" />
 	</listeners>
 	<test name="Test">
 		<groups>
@@ -11,13 +12,15 @@
 				<include name="Sanity"></include>
 				<include name="Functional"></include>
 				<include name="Smoke"></include>
-				<!--exclude name="Smoke"></exclude-->
+				<!--exclude name="Smoke"></exclude -->
 			</run>
 		</groups>
 		<classes>
 			<class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
 			<class
 				name="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
+			<class
+				name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

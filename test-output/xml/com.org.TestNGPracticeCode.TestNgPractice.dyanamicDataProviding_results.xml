@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.013">
+  <properties />
+  
+  
+            <testcase name="logIn" time="0.002" classname="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
+                <testcase name="logIn" time="0.008" classname="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
+                <testcase name="logIn" time="0.002" classname="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
+                <testcase name="logIn" time="0.001" classname="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
+      
+</testsuite>
