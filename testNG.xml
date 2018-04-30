@@ -16,11 +16,13 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
+			<!--class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
 			<class
 				name="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
 			<class
-				name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
+				name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" /-->
+				<class
+				name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
