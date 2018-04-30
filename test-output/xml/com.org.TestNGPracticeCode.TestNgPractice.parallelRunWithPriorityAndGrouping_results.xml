@@ -4,7 +4,7 @@
            failures="3"
            errors="0"
            skipped="1"
-           time="0.023">
+           time="0.014">
   <properties />
             <testcase name="TestFunctionSiventh" time="0.001" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping">
                 <failure type="java.lang.AssertionError"
@@ -29,9 +29,21 @@
   org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
   org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
       </failure>
 
@@ -55,14 +67,26 @@
   org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
   org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
       </failure>
 
           </testcase>
-            <testcase name="TestFunctionSecond" time="0.003" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping">
+            <testcase name="TestFunctionSecond" time="0.001" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping">
                 <failure type="java.lang.AssertionError"
                   message="The following asserts failed:
 	expected [11] but found [10],
@@ -85,9 +109,21 @@
   org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
   org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
       </failure>
 
@@ -97,7 +133,7 @@
           <skipped />
     </testcase>
   
-            <testcase name="TestFunctionSixth" time="0.002" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
-                <testcase name="TestFunctionThird" time="0.014" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
+            <testcase name="TestFunctionThird" time="0.007" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
+                <testcase name="TestFunctionSixth" time="0.001" classname="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
       
 </testsuite>
