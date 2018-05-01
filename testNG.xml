@@ -4,25 +4,24 @@
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-		<listener class-name="com.org.TestNGPracticeCode.TestNgPractice.Transformation" />
+		<!--listener class-name="com.org.TestNGPracticeCode.TestNgPractice.Transformation" /-->
 	</listeners>
 	<test name="Test">
-		<groups>
-			<run>
-				<include name="Sanity"></include>
-				<include name="Functional"></include>
-				<include name="Smoke"></include>
-				<!--exclude name="Smoke"></exclude -->
-			</run>
-		</groups>
+	 <groups>
+	 <run>
+	        <!--include name="Sanity"></include-->
+	        <!--include name="Functional"></include-->
+	 </run>
+	 </groups>
+		
 		<classes>
-			<!--class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
-			<class
-				name="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
-			<class
-				name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" /-->
-				<class
-				name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" />
+			<!--class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" 
+				/> <class name="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" 
+				/> <class name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" 
+				/> <class name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" 
+				/ -->
+			<class name="rest.basic.testing.SampleGetRequest" />
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

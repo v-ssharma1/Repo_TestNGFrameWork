@@ -12,29 +12,105 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 0.025s
+  Test duration: 6.449s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">rest.basic.testing.SampleGetRequest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  headerValidation
+      </td>
+  <td class="duration">
+    1.485s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: 1 expectation failed.<br/>
+Expected header &quot;content-encoding &quot; was not &quot;gzip&quot;, was &quot;null&quot;. Headers are:<br/>
+Server=openresty/1.9.7.1<br/>
+Date=Tue, 01 May 2018 06:22:59 GMT<br/>
+Content-Type=application/json; charset=utf-8<br/>
+Transfer-Encoding=chunked<br/>
+Connection=keep-alive<br/>
+X-Frame-Options=SAMEORIGIN<br/>
+X-XSS-Protection=1; mode=block<br/>
+X-Content-Type-Options=nosniff<br/>
+ETag=W/&quot;e70c27085ed41de5321252b16c9582fe&quot;<br/>
+Cache-Control=max-age=0, private, must-revalidate<br/>
+X-Request-Id=cfe10120-7365-45f8-987a-4cd3b0b819f3<br/>
+X-Runtime=0.001313<br/>
+Content-Encoding=gzip<br/>
+</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)<br />
+              org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)<br />
+              org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)<br />
+              org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)<br />
+              com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)<br />
+              com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$10.call(Unknown Source)<br />
+              com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)<br />
+              org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)<br />
+              org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)<br />
+              com.jayway.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:169)<br />
+              com.jayway.restassured.specification.ResponseSpecification$header$7.callCurrent(Unknown Source)<br />
+              com.jayway.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:176)<br />
+              com.jayway.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:148)<br />
+              rest.basic.testing.SampleGetRequest.headerValidation(SampleGetRequest.java:93)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:580)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding</td>
+        <td colspan="3" class="group">rest.basic.testing.SampleGetRequest</td>
       </tr>
             
 <tr>
   <td class="method">
-                  logIn
+                  bodyVariableValicationCountry
       </td>
   <td class="duration">
-    0.002s
+    1.743s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">null, "Saurabh3"</span><br />
     
         
 
@@ -42,14 +118,13 @@
 </tr>
 <tr>
   <td class="method">
-                  logIn
+                  bodyVariableValicationforDescription
       </td>
   <td class="duration">
-    0.001s
+    1.745s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">null, "Saurabh5"</span><br />
     
         
 
@@ -57,29 +132,13 @@
 </tr>
 <tr>
   <td class="method">
-                  logIn
+                  getRequestForFindingWeatherByCityName
       </td>
   <td class="duration">
-    0.008s
+    1.476s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"Saurabh", "Saurabh1"</span><br />
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  logIn
-      </td>
-  <td class="duration">
-    0.002s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">null, "Saurabh7"</span><br />
     
         
 
