@@ -21,7 +21,6 @@
 				/> <class name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" 
 				/ -->
 			<class name="rest.basic.testing.SampleGetRequest" />
-
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
