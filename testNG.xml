@@ -1,28 +1,43 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="methods" thread-count="4">
+<suite name="Rigression Suite" verbose="10" preserve-order="true"
+	parallel="methods" thread-count="4">
 	<!-- suite name="Suite" parallel="classes" thread-count="4" -->
 	<listeners>
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-		<listener class-name="com.org.TestNGPracticeCode.TestNgPractice.Transformation" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener
+			class-name="com.org.TestNGPracticeCode.TestNgPractice.Transformation" />
 	</listeners>
-	<test name="Test">
-		<groups>
-			<run>
-				<include name="Sanity"></include>
-				<include name="Functional"></include>
-				<include name="Smoke"></include>
-				<!--exclude name="Smoke"></exclude -->
-			</run>
-		</groups>
+	<test name="ValidateTestNGAnnotations">
+		<!-- groups> <run> <include name="Sanity"></include> <include name="Functional"></include> 
+			<include name="Smoke"></include> <exclude name="Smoke"></exclude> </run> 
+			</groups -->
 		<classes>
-			<!--class name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
+			<class
+				name="com.org.TestNGPracticeCode.TestNgPractice.testNGAnnotations" />
+		</classes>
+	</test> <!-- Test1 -->
+	<test name="ValidateparallelRunWithPriorityAndGroupingWithDyanamicDataProviding">
+		<!-- groups> <run> <include name="Sanity"></include> <include name="Functional"></include> 
+			<include name="Smoke"></include> <exclude name="Smoke"></exclude> </run> 
+			</groups -->
+		<classes>
 			<class
 				name="com.org.TestNGPracticeCode.TestNgPractice.parallelRunWithPriorityAndGrouping" />
 			<class
-				name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" /-->
-				<class
-				name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" />
+				name="com.org.TestNGPracticeCode.TestNgPractice.dyanamicDataProviding" />
+			<!-- class name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" 
+				/ -->
 		</classes>
-	</test> <!-- Test -->
+	</test> <!-- Test2 -->
+	<!--test name="ValidatewheatherRequests">
+		<groups> <run> <include name="Sanity"></include> <include name="Functional"></include> 
+			<include name="Smoke"></include> <exclude name="Smoke"></exclude> </run> 
+			</groups>
+		<classes>
+			<class name="com.org.TestNGPracticeCode.TestNgPractice.wheatherRequestsTest" 
+				/>
+		</classes>
+	</test--> <!-- Test3 -->
 </suite> <!-- Suite -->

@@ -7,9 +7,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
 //import org.testng.IRetryAnalyzer;
 //import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -90,5 +92,15 @@ public class dyanamicDataProviding  {
 	@AfterSuite
 	public void afterSuite() {
 		System.out.println("I am in after Suite of parallelRunWithPriorityAndGrouping.");
+	}
+	
+	@BeforeGroups
+	public void beforeGroup() {
+		System.out.println("I am in before Groups of of parallelRunWithPriorityAndGrouping.");
+	}
+
+	@AfterGroups
+	public void afterGroup() {
+		System.out.println("I am in after Groups of parallelRunWithPriorityAndGrouping.");
 	}
 }
